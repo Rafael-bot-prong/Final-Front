@@ -1,0 +1,163 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+}
+
+header {
+    background: #1f1f1f; /* Fundo do cabeçalho */
+    color: #ffffff; /* Texto do cabeçalho */
+    padding: 10px 20px;
+}
+
+.logo {
+    margin: 0;
+}
+
+nav .menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    color: #ffffff; /* Links do menu */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #bb86fc; /* Efeito de hover nos links */
+}
+
+.hero {
+    text-align: center;
+    padding: 20px;
+    background: #1f1f1f; /* Fundo do herói */
+    color: #e0e0e0;
+    border-bottom: 1px solid #333;
+}
+
+.produtos .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.produto {
+    background: #1e1e1e; /* Fundo dos cartões de produtos */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.produto:hover {
+    transform: scale(1.05); /* Efeito de hover no produto */
+}
+
+.produto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    color: #bb86fc; /* Texto destacado para preço */
+}
+
+.detalhes-produto {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.detalhes-produto img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.detalhes-produto div {
+    color: #e0e0e0;
+}
+
+button {
+    background-color: #bb86fc; /* Botão com destaque */
+    color: #1f1f1f;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #9a67ea; /* Efeito de hover no botão */
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #1f1f1f; /* Fundo do formulário */
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background: #2e2e2e; /* Campos de entrada */
+    color: #ffffff;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #999999;
+}
+
+form button {
+    background-color: #bb86fc;
+    color: #1f1f1f;
+}
+
+form button:hover {
+    background-color: #9a67ea;
+}
+
+footer {
+    text-align: center;
+    background: #1f1f1f; /* Fundo do rodapé */
+    color: #e0e0e0;
+    padding: 10px;
+    border-top: 1px solid #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .detalhes-produto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .detalhes-produto img {
+        max-width: 100%;
+    }
+}
