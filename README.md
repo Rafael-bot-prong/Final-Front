@@ -1,5 +1,9 @@
 # Final-Front
 
+Grupo
+
+Rafael De Souza Goudinho
+
 Descrição do Projeto
 
 O projeto é uma loja online fictícia com design responsivo, criada para a entrega de um trabalho final de Front end da faculdade. O site é funcional em dispositivos de diferentes tamanhos, adaptando sua interface automaticamente com o uso de Media Queries. Ele contém três páginas:
